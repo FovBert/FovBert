@@ -1,5 +1,2 @@
-print("Hello world! I am FovBert and I am a novice developer")
+Hello all!
 
-print("I am learning languages such as Java and Python")
-
-Hello wellcom!
