@@ -1,0 +1,45 @@
+name: Обновление календаря активности
+
+on:
+  schedule:
+    - cron: '17 3 * * *' # каждый день в 03:17 UTC
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/**'
+      - '.github/workflows/refresh.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-calendar
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Собрать календарь и шапку
+        run: |
+          node scripts/contrib.mjs --user "${{ github.repository_owner }}" --out assets
+          node scripts/banner.mjs --out assets
+
+      - name: Закоммитить, если что-то изменилось
+        run: |
+          git config user.name  'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets
+          if git diff --staged --quiet; then
+            echo 'Изменений нет.'
+          else
+            git commit -m 'chore: обновление календаря активности'
+            git push
+          fi

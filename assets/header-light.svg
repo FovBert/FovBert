@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="286" viewBox="0 0 1000 286" role="img" aria-label="FovBert — системный администратор, разработчик, безопасность">
+<defs>
+  <radialGradient id="g" cx="50%" cy="0%" r="70%">
+    <stop offset="0%" stop-color="#1f6d8c" stop-opacity="0.09"/>
+    <stop offset="100%" stop-color="#1f6d8c" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="n" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="25%" stop-color="#0d1116"/>
+    <stop offset="100%" stop-color="#6b7681"/>
+  </linearGradient>
+  <clipPath id="c"><rect x="1" y="1" width="998" height="284" rx="15"/></clipPath>
+</defs>
+
+<style>
+  .s{font-family:"Segoe UI",Helvetica,Arial,sans-serif}
+  .m{font-family:"JetBrains Mono","DejaVu Sans Mono",Consolas,monospace}
+</style>
+
+<rect x="1" y="1" width="998" height="284" rx="15" fill="#fafbfc" stroke="#e4e8ec"/>
+<g clip-path="url(#c)"><rect width="1000" height="286" fill="url(#g)"/></g>
+
+<!-- kicker -->
+<circle cx="56" cy="49" r="4" fill="#1f6d8c"/>
+<text class="m" x="70" y="53" font-size="12" letter-spacing="4.2" fill="#6b7681">SYSADMIN · DEVELOPER · SECURITY</text>
+
+<!-- имя -->
+<text class="s" x="54" y="132" font-size="80" font-weight="700" letter-spacing="-3.4" fill="url(#n)">FovBert</text>
+
+<!-- роль -->
+<text class="s" x="56" y="166" font-size="16" fill="#4a5560">Системный администратор и разработчик · сети, серверы, безопасность</text>
+
+<!-- разделитель -->
+<line x1="56" y1="196" x2="944" y2="196" stroke="#e4e8ec"/>
+
+<!-- мета-колонки -->
+<text class="m" x="56" y="222" font-size="9.5" letter-spacing="2.6" fill="#aab4be">ROLE</text>
+<text class="s" x="56" y="245" font-size="13" fill="#4a5560">System Administrator</text>
+<text class="m" x="296" y="222" font-size="9.5" letter-spacing="2.6" fill="#aab4be">CODE</text>
+<text class="s" x="296" y="245" font-size="13" fill="#4a5560">Python · PHP · JS · C</text>
+<text class="m" x="536" y="222" font-size="9.5" letter-spacing="2.6" fill="#aab4be">NET</text>
+<text class="s" x="536" y="245" font-size="13" fill="#4a5560">MikroTik · Cisco</text>
+<text class="m" x="776" y="222" font-size="9.5" letter-spacing="2.6" fill="#aab4be">NEXT</text>
+<text class="s" x="776" y="245" font-size="13" fill="#4a5560">DevOps Engineer</text>
+
+<!-- телеграм справа сверху -->
+<text class="m" x="944" y="53" font-size="12" letter-spacing="1.6" fill="#1f6d8c" text-anchor="end">@fovbert1</text>
+</svg>
